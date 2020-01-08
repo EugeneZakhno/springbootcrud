@@ -12,7 +12,7 @@ public class UserController {
 
     private UserService userService;
 
-    @GetMapping("/users")
+    @GetMapping("users")
     public String findAll(){
         List<User> users = userService.findAll();
         return "";
