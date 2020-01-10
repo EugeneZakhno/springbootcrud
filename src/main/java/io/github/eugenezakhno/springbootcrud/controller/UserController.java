@@ -37,7 +37,7 @@ public class UserController {
     @PostMapping("/user-create")
     public String createUser(User user){
         userService.saveUser(user);
-        return "redirect:/users";
+        return "redirect:/users ";
     }
 
     @GetMapping("user-delete/{id}")
