@@ -9,6 +9,4 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     List<User> findByLastName (String lastName);
 
-
-
 }
