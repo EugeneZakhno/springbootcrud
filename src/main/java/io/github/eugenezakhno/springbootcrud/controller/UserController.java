@@ -29,7 +29,7 @@ public class UserController {
         return "user-list";
     }
 
-    @GetMapping("/user- create")
+    @GetMapping("/user-create")
     public String createUserForm(User user){
         return "user-create";
     }
