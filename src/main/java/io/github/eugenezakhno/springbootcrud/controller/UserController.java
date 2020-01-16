@@ -22,7 +22,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping("/users")
+    @GetMapping(value = "/users")
     public String findAll(Model model){
         List<User> users = userService.findAll();
         model.addAttribute("users", users);

@@ -23,8 +23,8 @@ public class UserService {
     public List<User> findAll(){
         return userRepository.findAll();
     }
-    public User saveUser(User user){
-        return userRepository.save(user);
+    public void saveUser(User user){
+        userRepository.save(user);
     }
     public void deleteById(Long id){
         userRepository.deleteById(id);
